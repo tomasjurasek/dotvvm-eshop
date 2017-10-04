@@ -8,7 +8,7 @@ using DotVVM.Framework.ViewModel;
 
 namespace Eshop.Web.ViewModels
 {
-    public class DefaultViewModel : DotvvmViewModelBase
+    public class DefaultViewModel : MainMasterPageViewModel
     {
         
         public string Title { get; set; }

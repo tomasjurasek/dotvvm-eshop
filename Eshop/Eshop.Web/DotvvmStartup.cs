@@ -1,5 +1,6 @@
 using DotVVM.Framework;
 using DotVVM.Framework.Configuration;
+using DotVVM.Framework.ResourceManagement;
 using DotVVM.Framework.Routing;
 
 namespace Eshop.Web
@@ -30,6 +31,7 @@ namespace Eshop.Web
         private void ConfigureResources(DotvvmConfiguration config, string applicationPath)
         {
             // register custom resources and adjust paths to the built-in resources
+            config.Resources.Register("main-style", new StylesheetResource(new FileResourceLocation("~/wwwroot/css/Style.css")));
         }
     }
 }

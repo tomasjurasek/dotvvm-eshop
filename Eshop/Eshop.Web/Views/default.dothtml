@@ -1,15 +1,4 @@
-@viewModel Eshop.Web.ViewModels.DefaultViewModel, Eshop.Web
-
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-
-    <h1>{{value: Title}}</h1>
-
-</body>
-</html>
+﻿@viewModel Eshop.Web.ViewModels.DefaultViewModel, Eshop.Web
+@masterPage Views/MainMasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+</dot:Content>
